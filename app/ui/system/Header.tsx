@@ -19,7 +19,7 @@ export default function Header() {
                     <UserIcon className="w-6"/>
                 </Link>
                 <Link 
-                    href={""}
+                    href={"/"}
                     className="text-violet-700 hover:text-violet-800"
                 >
                     <ExitIcon className="w-6"/>

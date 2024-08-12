@@ -28,7 +28,7 @@ const menu = [
     {
         icon: ChartBarIcon,
         label: "Ventas",
-        path: "/system/sales",
+        path: "/system/sales/dashboard",
         submenus: [
             {
                 label: "Clientes",
