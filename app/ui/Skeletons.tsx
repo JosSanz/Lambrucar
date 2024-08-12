@@ -106,7 +106,7 @@ export function SaleHistoryTableRowSkeleton() {
 
 export function SaleHistoryTableSkeleton() {
 	return (
-		<table className="w-[640px] mx-auto overflow-hidden">
+		<table className="w-full overflow-hidden">
 			<thead>
 				<tr className="bg-violet-200">
                     <th className="p-2">

@@ -3,10 +3,11 @@ import { EyeIcon } from "../../Icons";
 import Link from "next/link";
 import { fetchSales } from "@/app/lib/data";
 import { Fragment } from "react";
+import ButtonOpenModal from "../../ButtonOpenModal";
 
 export default async function SalesTable({
     query,
-    currentPage,
+    currentPage
 }: {
     query: string;
     currentPage: number;
@@ -55,12 +56,9 @@ export default async function SalesTable({
                             <td className="p-2">{d.eta} h</td>
                             <td className="p-2">
                                 <div className="flex justify-center items-center">
-                                    <Link 
-                                        href={`/system/sales/${d.id}`}
-                                        className="text-neutral-400 hover:text-inherit"
-                                    >
+                                    <ButtonOpenModal id={d.id}>
                                         <EyeIcon className="w-6"/>
-                                    </Link>
+                                    </ButtonOpenModal>
                                 </div>
                             </td>
                         </tr>

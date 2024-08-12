@@ -42,7 +42,7 @@ export async function fetchSales(query: string, currentPage: number) {
 		}
 	];
 
-	await new Promise((resolve) => setTimeout(resolve, 2000));
+	await new Promise((resolve) => setTimeout(resolve, 500));
 
 	const results = data.filter(
 		(d) =>
@@ -123,7 +123,7 @@ export async function fetchSaleHistory(id: string) {
 		},
 	];
 
-	await new Promise((resolve) => setTimeout(resolve, 2000));
+	await new Promise((resolve) => setTimeout(resolve, 500));
 
 	return data;
 }
@@ -162,7 +162,7 @@ export async function fetchSummaryByStates() {
 		},
 	];
 
-	await new Promise((resolve) => setTimeout(resolve, 2000));
+	await new Promise((resolve) => setTimeout(resolve, 500));
 
 	return data;
 }

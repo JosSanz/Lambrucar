@@ -1,14 +1,14 @@
 import { fetchSaleHistory } from "@/app/lib/data"
 import { toDate, toStringTime, toTime } from "@/app/lib/utils";
 import { Fragment } from "react";
-import { BusIcon, NotificationIcon, TransitIcon, UserIcon } from "../Icons";
+import { BusIcon, NotificationIcon, TransitIcon, UserIcon } from "../../Icons";
 
 export default async function HistoryTable({ id }: {id: string}) {
     const data = await fetchSaleHistory(id);
     
     return (
         <Fragment>
-            <table className="w-[640px] mx-auto">
+            <table className="w-full">
                 <thead>
                     <tr className="bg-violet-200">
                         <th className="p-2">
