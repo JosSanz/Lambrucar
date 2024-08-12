@@ -6,7 +6,7 @@ export default function Header() {
         <header className="flex justify-between items-center border-b-2 border-solid border-gray-300">
             <div className="w-60 px-4 pb-6">
                 <img 
-                    src="/Logo.png" 
+                    src="/static/images/Logo.png" 
                     alt="Logotipo" 
                     className="max-w-full"
                 />
